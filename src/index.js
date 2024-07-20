@@ -29,11 +29,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 card.appendChild(icon);
                 card.appendChild(name);
 
-                card.addEventListener("click", function() {
+                const wrapper = document.createElement("i");
+                wrapper.className = "clickable-wrapper";
+                wrapper.addEventListener("click", function() {
                     window.location.href = `./materials/${file}`;
                 });
 
-                gridContainer.appendChild(card);
+                wrapper.appendChild(card);
+
+                gridContainer.appendChild(wrapper);
             });
         })
         .catch(error => {

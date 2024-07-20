@@ -11,49 +11,57 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
     padding: 20px;
     max-width: 1000px;
-    margin: 20px; /* Add margin around the container */
+    margin: 20px; /* Margin around the container */
 }
 
 .file-name {
-    color: white;
-    word-wrap: break-word; /* Allow long words to be broken and wrap to the next line */
+    color: white; /* White text color */
+    word-wrap: break-word; /* Allow long words to wrap */
     white-space: normal; /* Allow text to wrap */
     display: block;
     width: 100%;
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Space between icon and file name */
 }
 
 .icon {
-    height: 60px;
-    width: 80px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
+    color: white; /* White icon color */
+    font-size: 48px; /* Large icon size */
 }
 
 .card {
-    background-color: #7b7b7b;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #7b7b7b; /* Card background color */
+    border: 2px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding */
     text-align: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none; /* Remove underline from text */
+    color: #333; /* Text color */
+    font-size: 18px; /* Font size */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 200px; /* Fixed height for equal card sizes */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    cursor: pointer; /* Make the entire card clickable */
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.clickable-wrapper {
+    display: block; /* Ensures the element is treated as a block element */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.clickable-wrapper .card {
+    pointer-events: auto; /* Allow pointer events for the card */
 }
