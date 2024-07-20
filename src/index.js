@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 card.appendChild(name);
 
                 card.addEventListener("click", function() {
-                    window.location.href = `materials/${file}`;
+                    window.location.href = `./materials/${file}`;
                 });
 
                 gridContainer.appendChild(card);
