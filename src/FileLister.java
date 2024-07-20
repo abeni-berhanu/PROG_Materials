@@ -5,7 +5,7 @@ import java.io.IOException;
 public class FileLister {
     public static void main(String[] args) {
         // Path to the documents directory
-        String documentsPath = "../docs";
+        String documentsPath = "../materials";
         File documentsDir = new File(documentsPath);
         
         // Check if the directory exists
@@ -41,7 +41,7 @@ public class FileLister {
         jsonBuilder.append("\n]");
 
         // Write JSON to files.json
-        try (FileWriter writer = new FileWriter("files.json")) {
+        try (FileWriter writer = new FileWriter("files_list.json")) {
             writer.write(jsonBuilder.toString());
             System.out.println("File names have been written to files.json");
         } catch (IOException e) {
