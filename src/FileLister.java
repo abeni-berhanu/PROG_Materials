@@ -5,7 +5,7 @@ import java.io.IOException;
 public class FileLister {
     public static void main(String[] args) {
         // Path to the documents directory
-        String documentsPath = "documents";
+        String documentsPath = "../docs";
         File documentsDir = new File(documentsPath);
         
         // Check if the directory exists

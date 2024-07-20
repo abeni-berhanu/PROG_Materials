@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const gridContainer = document.getElementById("grid-container");
 
     // Path to the JSON file
-    const filesEndpoint = "files.json";
+    const filesEndpoint = "docs_list.json";
 
     fetch(filesEndpoint)
         .then(response => response.json())
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             files.forEach(file => {
                 const fileName = file.split('/').pop();
                 const fileLink = document.createElement("a");
-                fileLink.href = `documents/${file}`;
+                fileLink.href = `../docs/${file}`;
                 fileLink.target = "_blank";
                 fileLink.className = "grid-item";
                 fileLink.textContent = fileName;
