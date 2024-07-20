@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const gridContainer = document.getElementById("grid-container");
 
     // Path to the JSON file
-    const filesEndpoint = "docs_list.json";
+    const filesEndpoint = "files_list.json";
 
     fetch(filesEndpoint)
         .then(response => response.json())
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 card.appendChild(name);
 
                 card.addEventListener("click", function() {
-                    window.location.href = `../docs/${file}`;
+                    window.location.href = `../materials/${file}`;
                 });
 
                 gridContainer.appendChild(card);
