@@ -1,0 +1,22 @@
+{
+    "materials": {
+        "file": [
+            "backend-roadmap_by_mosh.pdf",
+            "Css_cheatsheet.pdf",
+            "CSS_Filter.pdf",
+            "CSS_Shapes_tricks.pdf",
+            "git_cheatsheet_by_mosh.pdf",
+            "HTML_cheatSheet.pdf",
+            "JavaScript_cheatsheet.pdf",
+            "Java_CheatSheet_by_Mosh.pdf",
+            "Java_GUI_cheatSheet.pdf",
+            "MongoDB_my-notion-note.pdf",
+            "mySQL_cheatSheet.pdf",
+            "NodeJS_my-notion-note.pdf",
+            "Python_by_FINXTER.pdf",
+            "Python_Interview_Questions_with_Answers.pdf",
+            "Python_notion_my-note.pdf",
+            "React_cheatsheet.pdf"
+        ]
+    }
+}
