@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             const path = new URLSearchParams(window.location.search).get('path') || '';
-            console.log(path, "hello fetch");
             renderDirectory(getSubdirectory(data, path), path);
         })
         .catch(error => console.error('Error fetching JSON:', error));
