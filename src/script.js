@@ -65,7 +65,7 @@ function createCard(name, type, basePath) {
         } else {
             const folderPath = basePath ? `${basePath}/${name}` : name;
             // Navigate to directory.html with the correct path
-            window.location.href = `directory.html?path=${encodeURIComponent(folderPath)}`;
+            window.location.href = `index.html?path=${encodeURIComponent(folderPath)}`;
         }
     });
 
